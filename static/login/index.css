@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.container .leftHalf {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background: #2242A4;
+}
+
+.container .leftHalf .logo {
+     position: relative;
+     top: 0%;
+     left: 3%;
+     width: 20%;
+     height: 5%;
+ }
+
+.container .leftHalf .logo img {
+    position: relative;
+    display: inline-block;
+    top: 80%;
+}
+
+.container .leftHalf .logo p {
+    position: relative;
+    display: inline-block;
+    color: white;
+    top: 50%;
+    translateY(-50%);
+    left: 10%
+}
+
+.container .leftHalf .picture {
+    position: relative;
+    top: 15%;
+    left: 3%;
+    width: 80%;
+    height: 70%;
+}
+
+.container .leftHalf .picture h1 {
+    color: white;
+}
+
+.container .leftHalf .picture p {
+    margin-top: 10px;
+    color: white;
+}
+
+.container .rightHalf {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0%;
+    left: 50%;
+    background: white;
+}
+
+.container .rightHalf .enter {
+    position: relative;
+    width: 70%;
+    height: 60%;
+    top: 20%;
+    left: 15%;
+    display: inline-block;
+}
+
+.container .rightHalf .enter h1 {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.container .rightHalf .enter .data {
+    position: relative;
+    width: 90%;
+    height: 30%;
+    left: 0%;
+}
+
+.container .rightHalf .enter input {
+    position: relative;
+    width: 100%;
+    height: 30%;
+    margin: 5px 0px;
+    border-radius: 3px;
+    border-width: 0px;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.container .rightHalf .enter input:active {
+    border-width: 0px;
+}
+
+.container .rightHalf .enter .agriements {
+    position: relative;
+    left: 5px;
+    margin-bottom: 30px;
+    width: 90%;
+}
+
+.container .rightHalf .enter .agriements #rememberMe {
+    display: inline-block;
+    position: relative;
+    height: 20px;
+    width: 20px;
+    float: left;
+    translateY(-50%);
+    top: -6px;
+}
+
+.container .rightHalf .enter .agriements p {
+    display: inline-block;
+    color: blue;
+    cursor: pointer;
+    float: right;
+}
+
+.container .rightHalf .enter .agriements p:active {
+    color: darkviolet;
+}
+
+.container .rightHalf .enter .buttons .enterBtn {
+    position: relative;
+    display: inline-block;
+    background: #2242A4;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    border-width: 0px;
+    margin-right: 5px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.container .rightHalf .enter .buttons .enterBtn:active {
+    box-shadow: none;
+}
+
+.container .rightHalf .enter .buttons .registrationBtn {
+    position: relative;
+    display: inline-block;
+    background: white;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    border-width: 0px;
+    margin-left: 5px;
+    border-color: grey;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.container .rightHalf .enter .buttons .registrationBtn:active {
+    box-shadow: none;
+}
+
+.container .rightHalf .enter .rights {
+    position: absolute;
+    width: 60%;
+    bottom: 0;
+}
+
+.container .rightHalf .enter .rights span {
+    color: blue;
+    cursor: pointer;
+}
+
+.container .rightHalf .enter .rights span:active {
+    color: darkviolet;
+}
+
+.container .rightHalf .registration {
+    position: relative;
+    width: 70%;
+    height: 80%;
+    top: 10%;
+    left: 15%;
+    display: none;
+}
+
+.container .rightHalf .registration h1 {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.container .rightHalf .registration .data {
+    position: relative;
+    width: 90%;
+    height: 70%;
+    left: 0%;
+}
+
+.container .rightHalf .registration input {
+    position: relative;
+    width: 100%;
+    height: 12%;
+    margin: 10px 0px;
+    border-radius: 3px;
+    border-width: 0px;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.container .rightHalf .registration input:active {
+    border-width: 0px;
+}
+
+.container .rightHalf .registration #policyAgree {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    float: left;
+    translateY(-50%);
+    top: -10px;
+}
+
+.container .rightHalf .registration .data label span {
+    color: blue;
+    cursor: pointer;
+}
+
+.container .rightHalf .registration .data label span:active {
+    color: darkviolet;
+}
+
+.container .rightHalf .registration .pass {
+    margin-top: 40px;
+}
+
+.container .rightHalf .registration .pass .reg {
+    position: relative;
+    display: inline-block;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    border-width: 0px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background: #2242A4;
+    color: white;
+}
+
+.container .rightHalf .registration .pass .enter {
+    position: relative;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    border-width: 0px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background: white;
+    border-color: grey;
+}
+
+.container .rightHalf .registration .pass .enter:active {
+    box-shadow: none;
+}
+
+.container .rightHalf .registration .pass .reg:active {
+    background: blue;
+}

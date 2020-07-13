@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/png" href="{% static 'login/favicon-16x16.png' %}"/>
+    <link rel="stylesheet" href="{% static 'login/index.css' %}">
+    <title>Adsberg - Вход в систему</title>
+    <meta content="Adsberg - Запуск рекламных кампаний Facebook по API. Один медиабаер может больше чем команда!">
+</head>
+<body>
+    <div class="container">
+        <div class="leftHalf">
+            <div class="logo">
+                <img src="{% static 'dash/favicon-32x32.png' %}">
+                <p>Adsberg</p>
+            </div>
+            <div class="picture">
+                <img src="{% static 'login/adsberg.svg' %}">
+                <h1>Запускайте десятки рекламных кампаний Facebook в несколько кликов.</h1>
+                <p>Все инструменты в единой удобной платформе.</p>
+            </div>
+        </div>
+        <div class="rightHalf">
+            <div class="enter" id="enter">
+                <h1>Вход</h1>
+                <form class="data">
+                    <input id="emailLogin" type="text" placeholder="Email" required />
+                    <input id="passwordLogin" type="password" placeholder="Пароль" required />
+                </form>
+                <form class="agriements">
+                    <input type="checkbox" id="rememberMe" name="rememberMe" value="rememberMe">
+                    <label for="rememberMe" style="margin-left: 5px; margin-top: 5px;">Запомнить меня</label>
+                    <p onclick="">Забыли пароль?</p>
+                </form>
+                <div class="buttons">
+                    <button class="enterBtn">Войти</button>
+                    <button class="registrationBtn" onclick="openRegistration()">Регистрация</button>
+                </div>
+                <div class="rights">Вход в сервис подразумевает ваше согласие с <span onclick="">Правилами использования</span> и <span onclick="">Политикой конфиденциальности</span></div>
+            </div>
+            <div class="registration" id="registration">
+                <h1>Регистрация</h1>
+                <form class="data">
+                    <input id="nameRegistration" type="text" placeholder="Имя" required />
+                    <input id="secondNameRegistration" type="text" placeholder="Фамилия" required />
+                    <input id="emailRegistration" type="text" placeholder="Email" required />
+                    <input id="passwordRegistration" type="password" placeholder="Пароль" required />
+                    <input id="passwordRegistrationRepeat" type="password" placeholder="Повторите пароль" required />
+                    <p id="passwordsSimilarity"></p>
+                    <input type="checkbox" id="policyAgree" name="policyAgree" value="policyAgree">
+                    <label for="policyAgree" style="margin-left: 5px;">Я согласен с <span onclick="">Политикой конфиденциальности</span></label>
+                </form>
+                <div class="pass">
+                    <button class="reg">Зарегистрироваться</button>
+                    <button class="enter" onclick="openEnter()">Войти</button>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="{% static 'login/index.js' %}"></script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/png" href="{% static 'dash/favicon-16x16.png' %}"/>
+    <link rel="stylesheet" href="{% static 'dash/index.css' %}">
+    <title>Adsberg - Мультизапуск рекламных кампаний Facebook</title>
+    <meta content="Adsberg - Запуск рекламных кампаний Facebook по API, уникализация и аналитика в одном инструменте.">
+</head>
+<body>
+    <div class="container">
+        <div class="topmenu">
+            <div class="leftBlock">
+                <img src="{% static 'dash/favicon-32x32.png' %}">
+                <p>Adsberg</p>
+            </div>
+            <div class="rightBlock">
+                <p id="path">Приложения > Информация</p>
+                <div class="search">
+                    <form>
+                        <input type="text" placeholder="Поиск...">
+                        <button type="submit"></button>
+                    </form>
+                </div>
+                <div class="notifications">
+                    <div class="unread"></div>
+                </div>
+                <div class="avatar"></div>
+            </div>
+        </div>
+        <div class="titles">
+            <div class="folder" style="width: 12%;"><p><img src="{% static 'dash/infoBlack.svg' %}" class="favicon">Информация</p></div>
+            <div class="list" style="width: 12%;"><p><img src="{% static 'dash/infoBlack.svg' %}" class="favicon">Аккаунты<img src="{% static 'dash/listArrow.png' %}" class="arrow"></p></div>
+            <div class="list" style="width: 15%;"><p><img src="{% static 'dash/infoBlack.svg' %}" class="favicon">Запуск рекламы<img src="{% static 'dash/listArrow.png' %}" class="arrow"></p></div>
+            <div class="list" style="width: 12%;"><p><img src="{% static 'dash/infoBlack.svg' %}" class="favicon">Сервис<img src="{% static 'dash/listArrow.png' %}" class="arrow"></p></div>
+            <div class="list" style="width: 12%;"><p><img src="{% static 'dash/infoBlack.svg' %}" class="favicon">Финансы<img src="{% static 'dash/listArrow.png' %}" class="arrow"></p></div>
+            <div class="list" style="width: 17%;"><p><img src="{% static 'dash/infoBlack.svg' %}" class="favicon">Администрирование<img src="{% static 'dash/listArrow.png' %}" class="arrow"></p></div>
+            <div class="list" style="width: 14%;"><p><img src="{% static 'dash/infoBlack.svg' %}" class="favicon">Инструменты<img src="{% static 'dash/listArrow.png' %}" class="arrow"></p></div>
+        </div>
+        <div class="dashboard">
+            <h2>Показатели</h2>
+            <div class="indicators">
+                <div><p class="icons">🧔🏼</p><h1>0</h1><p class="name">Свободных аккаунтов</p></div>
+                <div style="margin-left: 43px"><p class="icons">🥶</p><h1>0</h1><p class="name">Аккаунтов старше 10 лет</p></div>
+                <div style="margin-left: 43px"><p class="icons">💳</p><h1>0</h1><p class="name">Свободных карт</p></div>
+                <div style="margin-left: 43px"><p class="icons">🚀</p><h1>0</h1><p class="name">Запусков сегодня</p></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

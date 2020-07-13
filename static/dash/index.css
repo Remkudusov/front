@@ -1,0 +1,267 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    background: #2242A4;
+    font-family: 'Lato', sans-serif;
+}
+
+.container .topmenu {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    top: 0%;
+    left: 0%;
+    background: #2242A4;
+}
+
+.container .topmenu .leftBlock {
+    display: inline-block;
+    position: absolute;
+    width: calc(15% - 1px);
+    height: calc(100% - 1px);
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.container .topmenu .leftBlock img {
+    position: relative;
+    display: inline-block;
+    top: 20%;
+    left: 10%;
+}
+
+.container .topmenu .leftBlock p {
+    position: relative;
+    display: inline-block;
+    color: white;
+    top: 5%;
+    translateY(-50%);
+    left: 15%
+}
+
+.container .topmenu .rightBlock {
+    display: inline-block;
+    position: relative;
+    height: calc(100% - 1px);
+    left: 15%;
+    width: 85%;
+    border-bottom: 1px solid white;
+}
+
+.container .topmenu .rightBlock p {
+    display: inline-block;
+    position: absolute;
+    color: white;
+    left: 3%;
+    top: 35%;
+}
+
+.container .topmenu .rightBlock .search {
+    background: #7BA7AB;
+}
+
+.container .topmenu .rightBlock .search:after{
+    content:"";
+    clear:both;
+    display:table
+}
+
+.container .topmenu .rightBlock .search form {
+    width: 200px;
+    position: absolute;
+    top: 15%;
+    left: 70%;
+}
+
+.container .topmenu .rightBlock .search form input {
+    position: relative;
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    background: white;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+.container .topmenu .rightBlock .search form input:focus {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.container .topmenu .rightBlock .search form button {
+    width: 20px;
+    height: 20px;
+    border: none;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    background: url("search.svg") no-repeat;
+    background-size: 20px;
+    outline: none;
+}
+
+.container .topmenu .rightBlock .notifications {
+    position: absolute;
+    left: 90%;
+    top: 25%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: url("bell.svg");
+}
+
+.container .topmenu .rightBlock .notifications .unread {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 50%;
+    float: right;
+}
+
+.container .topmenu .rightBlock .avatar {
+    position: absolute;
+    left: 95%;
+    top: 15%;
+    width: 40px;
+    height: 40px;
+    background: url("avatar.svg") no-repeat;
+    background-size: 40px;
+}
+
+.container .titles {
+    position: absolute;
+    width: 96%;
+    height: 10%;
+    top: 20%;
+    left: 2%;
+}
+
+.container .titles div {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    cursor: pointer;
+    background: none;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.container .titles div p {
+    position: relative;
+    text-align: center;
+    top: 40%;
+    color: black;
+    background: none;
+}
+
+.container .titles div p .favicon {
+    position: relative;
+    top: 2px;
+    height: 20px;
+    width: 20px;
+    background: none;
+    margin-right: 4px;
+}
+
+.container .titles .list p .arrow {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    margin-left: 4px;
+    transform: rotate(0deg);
+    margin-top: 5px;
+    background: none;
+}
+
+.container .titles .list:hover p .arrow {
+    animation: openList 0.5s ease;
+    transform: rotate(180deg);
+}
+
+@keyframes  openList {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(180deg);}
+}
+
+.container .titles .list:not(hover) p .arrow {
+    animation: closeList 0.5s ease;
+    transform: rotate(0deg);
+}
+
+@keyframes closeList {
+    from {transform: rotate(180deg);}
+    to {transform: rotate(0deg);}
+}
+
+.container .titles .folder {
+    background: white;
+}
+
+.container .titles .list:hover {
+    background: darkblue;
+}
+
+.container .dashboard {
+    position: absolute;
+    width: 98%;
+    height: 65%;
+    top: 30%;
+    left: 1%;
+    border-radius: 15px;
+    background: white;
+}
+
+.container .dashboard h2 {
+    position: absolute;
+    top: 7%;
+    left: 4%;
+    background: none;
+}
+
+.container .dashboard .indicators {
+    position: absolute;
+    width: 92%;
+    height: 30%;
+    top: 20%;
+    left: 4%;
+    background: none;
+}
+
+.container .dashboard .indicators div {
+    position: relative;
+    display: inline-block;
+    width: 22%;
+    height: 100%;
+    background: white;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.container .dashboard .indicators div .icons {
+    background: none;
+    position: relative;
+    top: 10%;
+    left: 5%;
+    font-size: 25px;
+}
+
+.container .dashboard .indicators div h1 {
+    position: relative;
+    top: 15%;
+    left: 7%;
+    background: none;
+}
+
+.container .dashboard .indicators div .name {
+    position: relative;
+    top: 17%;
+    left: 7%;
+    background: none;
+    color: grey;
+}
